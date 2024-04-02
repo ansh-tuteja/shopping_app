@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+.hero__section
+{
+background-image: url(./images/heroSectionBackground.png);
+min-height: 60vh;
+background-size: cover;
+background-position: center;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    font-size: 20px;
+}
+.navbar__menu_section
+{
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    text-decoration: solid;
+    color: white;
+}
+.navbar__menu_section .user__icon
+{
+border: 1px solid white;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 32px;
+width: 32px;
+border-radius: 50%;
+display: none;
+}
+.hero__section_container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(60vh-40px);
+    margin-top: 3rem;
+}
+.hero__section_logo
+{
+    width: 300px;
+    align-content: center;
+}
+.hero__section_title
+{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    color: white;
+}
+.hero__section_input_container
+{
+    background-color: white;
+    border-radius: 12px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+}
+.input_container_location , .input_container_search
+{
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    padding: 10px;
+    color: rgb(44, 43, 43);
+}
+.input_container_location
+{
+    width: 35%;
+    border-right:1px solid #e0e0e0 ;
+}
+.input_container_search
+{
+    width: 65%;
+
+}
+@media only screen and (max-width :600px)
+{
+    .navbar__menu_section .user__icon
+    {
+        display: flex;
+    }
+    .hero__section
+    {
+        min-height: 80vh;
+    }
+    .links
+    {
+        display: none;
+    }
+    .hero__section_container
+    {
+      margin-top: 6rem;
+    }
+    .hero__section_title
+    {
+      width: 80%;
+    }
+    .hero__section_input_container
+    {
+      width: 80%;
+    }
+    .navbar
+    {
+      padding: 16px;
+    }
+}
